@@ -1,0 +1,16 @@
+baseURL = 'https://<USERNAME>.github.io/yoshida-pelvis-site/'
+languageCode = 'ja'
+title = '吉田式 骨盤体操教室'
+
+[params]
+  lineAddUrl = "https://line.me/R/ti/p/@example" # Placeholder
+  googleFormUrl = "https://docs.google.com/forms/d/e/..." # Placeholder
+  phone = "03-1234-5678"
+
+  [params.brand]
+    enSubtitle = "Mens Wellness Program"
+
+  [params.hero]
+    badgeText = "男の「生涯現役」は、骨盤で決まる。"
+    headline = "飛距離も、歩みも、<br class=\"hidden md:block\"> 芯から<span class=\"text-amber-400\">力強く。</span>"
+    subcopy = "「昔のような力強さが戻らない…」<br> そんなシニア男性のために、女性講師が解剖学の視点から<br class=\"hidden md:block\"> 無理のない「深層筋ケア」を徹底指導します。"

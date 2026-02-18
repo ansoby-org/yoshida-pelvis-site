@@ -1,0 +1,31 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+@source "../../layouts";
+@source "../../content";
+@source "../../themes";
+
+@theme {
+  --font-sans: "Noto Sans JP", sans-serif;
+}
+
+/* Custom Component Classes */
+@layer components {
+  .hero-bg {
+    background: linear-gradient(rgba(15, 23, 42, 0.7), rgba(15, 23, 42, 0.7)),
+      url('https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&q=80&w=1920') no-repeat center center/cover;
+  }
+  .card-shadow {
+    box-shadow: 0 10px 25px -5px rgba(30, 58, 138, 0.1);
+  }
+}
+
+/* Custom Utility Classes (Legacy/Specific Colors) */
+@layer utilities {
+  .text-indigo-primary { @apply text-[#1e3a8a]; }
+  .bg-indigo-primary { @apply bg-[#1e3a8a]; }
+  .bg-sage-green { @apply bg-[#15803d]; }
+  .section-navy { @apply bg-[#0f172a]; }
+  .border-gold { @apply border-[#b45309]; }
+  .text-gold { @apply text-[#b45309]; }
+}

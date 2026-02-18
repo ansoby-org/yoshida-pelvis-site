@@ -1,0 +1,23 @@
+<header class="fixed w-full top-0 z-50 bg-white/95 border-b-2 border-slate-100">
+  <div class="container mx-auto px-4 h-20 flex items-center justify-between">
+    <div class="flex items-center gap-3">
+      <div class="w-10 h-10 bg-indigo-primary rounded-lg flex items-center justify-center text-white">
+        <i class="fa-solid fa-person-walking text-xl"></i>
+      </div>
+      <div>
+        <a href="/" class="text-xl font-black tracking-tight text-indigo-900 block leading-none">{{ site.Title }}</a>
+        <span class="text-[10px] text-slate-400 font-bold tracking-[0.2em] uppercase">{{ site.Params.brand.enSubtitle
+          }}</span>
+      </div>
+    </div>
+    <nav class="hidden md:flex gap-8 text-sm font-bold">
+      <a href="/#benefits" class="hover:text-indigo-600">解決できる悩み</a>
+      <a href="/#mechanism" class="hover:text-indigo-600">仕組み</a>
+      <a href="/#teacher" class="hover:text-indigo-600">講師紹介</a>
+      <a href="/blog/" class="hover:text-indigo-600">ブログ</a>
+    </nav>
+    <a href="{{ site.Params.lineAddUrl }}"
+      class="bg-indigo-primary text-white px-8 py-3 rounded-md text-sm font-bold hover:bg-blue-900 transition-all shadow-lg">
+      無料相談・体験 </a>
+  </div>
+</header>

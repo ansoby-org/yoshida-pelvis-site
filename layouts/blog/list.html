@@ -1,0 +1,14 @@
+{{ define "main" }} <div class="bg-gray-50 min-h-screen py-32">
+  <div class="container mx-auto px-4 max-w-4xl">
+    <h1 class="text-3xl md:text-4xl font-black text-indigo-900 mb-12 text-center">ブログ・お知らせ</h1>
+    <div class="grid gap-8"> {{ range .Pages }} <article
+        class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition border-l-4 border-indigo-900">
+        <div class="text-sm text-slate-500 mb-2">{{ .Date.Format "2006.01.02" }}</div>
+        <h2 class="text-2xl font-bold mb-4">
+          <a href="{{ .Permalink }}" class="text-slate-800 hover:text-indigo-600 transition">{{ .Title }}</a>
+        </h2>
+        <p class="text-slate-600 mb-4">{{ .Summary }}</p>
+        <a href="{{ .Permalink }}" class="text-indigo-600 font-bold hover:underline">続きを読む →</a>
+      </article> {{ end }} </div>
+  </div>
+</div> {{ end }}
