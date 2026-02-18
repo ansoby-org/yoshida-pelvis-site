@@ -1,4 +1,5 @@
-baseURL = 'https://<USERNAME>.github.io/yoshida-pelvis-site/'
+baseURL = 'https://ansoby-org.github.io/yoshida-pelvis-site/'
+relativeURLs = true
 languageCode = 'ja'
 title = '吉田式 骨盤体操教室'
 

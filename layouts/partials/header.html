@@ -5,16 +5,17 @@
         <i class="fa-solid fa-person-walking text-xl"></i>
       </div>
       <div>
-        <a href="/" class="text-xl font-black tracking-tight text-indigo-900 block leading-none">{{ site.Title }}</a>
+        <a href="{{ " ." | relURL }}" class="text-xl font-black tracking-tight text-indigo-900 block leading-none">{{
+          site.Title }}</a>
         <span class="text-[10px] text-slate-400 font-bold tracking-[0.2em] uppercase">{{ site.Params.brand.enSubtitle
           }}</span>
       </div>
     </div>
     <nav class="hidden md:flex gap-8 text-sm font-bold">
-      <a href="/#benefits" class="hover:text-indigo-600">解決できる悩み</a>
-      <a href="/#mechanism" class="hover:text-indigo-600">仕組み</a>
-      <a href="/#teacher" class="hover:text-indigo-600">講師紹介</a>
-      <a href="/blog/" class="hover:text-indigo-600">ブログ</a>
+      <a href="{{ " #benefits" | relURL }}" class="hover:text-indigo-600">解決できる悩み</a>
+      <a href="{{ " #mechanism" | relURL }}" class="hover:text-indigo-600">仕組み</a>
+      <a href="{{ " #teacher" | relURL }}" class="hover:text-indigo-600">講師紹介</a>
+      <a href="{{ " blog/" | relURL }}" class="hover:text-indigo-600">ブログ</a>
     </nav>
     <a href="{{ site.Params.lineAddUrl }}"
       class="bg-indigo-primary text-white px-8 py-3 rounded-md text-sm font-bold hover:bg-blue-900 transition-all shadow-lg">
